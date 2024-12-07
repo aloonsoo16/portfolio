@@ -1,0 +1,852 @@
+/* Estilos del body, header, y boton scroll*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.bg-dark {
+  background-color: #000000; /* Color del modo dark */
+}
+
+body.bg-light {
+  background-color: #f5f5f5 !important; /* Color del modo light */
+}
+
+header {
+  position: sticky; /* Posicion fija */
+  top: 0;
+  z-index: 1000;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+body.bg-light .scroll-up {
+  /* Fondo y sombra para los botones con esta clase en modo light */
+  position: fixed; /* Posicion fija */
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #4b4b4b;
+}
+
+body.bg-dark .scroll-up {
+  /* Fondo y sombra para los botones con esta clase en modo dark */
+  position: fixed; /* Posicion fija */
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #5b5b5b;
+}
+
+body.bg-light .circular-button {
+  /* Fondo y sombra para los botones con esta clase en modo light */
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #4b4b4b;
+}
+
+body.bg-dark .circular-button {
+  /* Fondo y sombra para los botones con esta clase en modo dark */
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #5b5b5b;
+}
+
+.navbar-nav {
+  border-radius: 20px;
+  background-color: transparent; /* Color de fondo del navbar y radio del borde */
+}
+
+.icon-swap {
+  animation: animate 4s linear infinite;
+}
+
+body.bg-dark .navbar-nav-scrolled {
+  background: rgba(27, 27, 27, 0.6); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(10px); /* Desenfoque */
+  -webkit-backdrop-filter: blur(
+    10px
+  ); /* Compatibilidad con navegadores WebKit */
+}
+
+body.bg-light .navbar-nav-scrolled {
+  background: rgba(236, 236, 236, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.text-custom-color {
+  transition: none; /* Transicion de cambio de color */
+}
+
+/* Colores generales para color-1 y color-2 */
+.color-1 {
+  color: #BFBBB8 !important; /* Color de la clase color-1 */
+}
+
+.color-2 {
+  color: #2B7B8C !important; /* Color de la clase color-2 */
+}
+
+/* Colores específicos para el tema claro */
+body.bg-light .color-1 {
+  color: #BFBBB8 !important;
+}
+
+body.bg-light .color-2 {
+  color: #2B7B8C !important;
+}
+
+body.bg-light .text-custom-color {
+  color: black !important; /* Color para el tema claro */
+}
+
+/* Colores específicos para el tema oscuro */
+body.bg-dark .color-1 {
+  color: #BFBBB8 !important;
+}
+
+body.bg-dark .color-2 {
+  color: #2B7B8C !important;
+}
+
+body.bg-dark .text-custom-color {
+  color: azure !important; /* Color para el tema oscuro */
+}
+
+/* Colores de los items de la barra de navegación del header según los modos */
+
+body.bg-light .nav-item.active .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace activo */
+}
+
+body.bg-light .nav-item .nav-link:active {
+  color: #2B7B8C !important; /* Color durante el clic */
+}
+
+body.bg-light .nav-item:active .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace cuando se hace clic */
+}
+
+body.bg-light .nav-item .nav-link:hover {
+  color: #2B7B8C !important; /* Color durante el hover */
+}
+
+body.bg-dark .nav-item:hover .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace cuando se hace hover */
+}
+
+body.bg-dark .nav-item.active .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace activo */
+}
+
+body.bg-dark .nav-item .nav-link:active {
+  color: #2B7B8C !important; /* Color durante el clic */
+}
+
+body.bg-dark .nav-item:active .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace cuando se hace clic */
+}
+
+body.bg-dark .nav-item .nav-link:hover {
+  color: #2B7B8C !important; /* Color durante el hover */
+}
+
+body.bg-dark .nav-item:hover .nav-link {
+  color: #2B7B8C !important; /* Color para el enlace cuando se hace hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el dropdown al hacer hover */
+}
+
+.dropdown-item {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.178
+  ) !important; /* Fondo con color grisaceo de poca opacidad */
+  border-radius: 20px !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.377
+  ) !important; /* Color grisaceo con mas opacidad al hacer hover */
+  cursor: pointer !important;
+}
+
+body.bg-dark .dropdown-menu {
+  left: auto; /* Elimina la posición automática a la derecha */
+  right: 0; /* Establece la posición en la esquina derecha del botón */
+  margin-right: 0;
+  border: 0px !important;
+  background-color: #2B7B8C !important;
+  border-radius: 20px;
+}
+
+body.bg-light .dropdown-menu {
+  left: auto; /* Elimina la posición automática a la derecha */
+  right: 0; /* Establece la posición en la esquina derecha del botón */
+  margin-right: 0;
+  border: 0px !important;
+  background-color: #2B7B8C !important;
+  border-radius: 20px;
+}
+
+/* SECCIÓN DE PRESENTACIÓN */
+
+.box {
+  /* Estilos del contenedor en ambos modos */
+  position: relative;
+  width: 250px;
+  height: 45px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+body.bg-dark .box span {
+  /* Estilos del span en modo dark */
+  inset: 2px;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: black !important;
+}
+
+body.bg-light .box span {
+  /* Estilos del span en modo light */
+  inset: 2px;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: #f5f5f5 !important;
+}
+
+body.bg-dark .box::after {
+  content: " ";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(transparent, transparent, #BFBBB8);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+body.bg-dark .box::before {
+  content: " ";
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-image: conic-gradient(transparent, transparent, #2B7B8C);
+  animation: animate 4s linear infinite;
+}
+
+body.bg-light .box::after {
+  content: " ";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(transparent, transparent, #BFBBB8);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+body.bg-light .box::before {
+  content: " ";
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-image: conic-gradient(transparent, transparent, #2B7B8C);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body.bg-dark .spinner {
+  /* Spinner del boton de descarga en el modo oscuro */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #BFBBB8;
+  animation: spin 2s linear infinite;
+  transition: background-color 2s ease-in-out;
+  z-index: 1000;
+}
+
+body.bg-dark .spinner2 {
+  /* Spinner de los botones de contacto y linkedin en modo oscuro */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #BFBBB8;
+  clip-path: circle(100%);
+}
+
+body.bg-dark .fill {
+  /* Relleno del spinner de descarga para la animacion en el modo oscuro, oculto por defecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #BFBBB8;
+  clip-path: circle(100%);
+  opacity: 0;
+  transition: border 0.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+body.bg-light .spinner {
+  /* Spinner del boton de descarga en el modo oscuro */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #BFBBB8;
+  animation: spin 2s linear infinite;
+  transition: background-color 2s ease-in-out;
+  z-index: 1000;
+}
+
+body.bg-light .spinner2 {
+  /* Spinner de los botones de contacto y linkedin en modo claro */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #BFBBB8;
+  clip-path: circle(100%);
+}
+
+body.bg-light .fill {
+  /* Relleno del spinner de descarga para la animacion en el modo claro, oculto por defecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #BFBBB8;
+  clip-path: circle(100%);
+  opacity: 0;
+  transition: border 0.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.line-container {
+  /* Contenedor que contiene la linea para la animacion al hacer click en el boton de descarga */
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50;
+  width: 50%;
+  height: 2px;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+body.bg-dark .line {
+  /* Linea dentro del contenedor line-container para el modo oscuro */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #2B7B8C;
+  border-radius: 20px;
+  transition: opacity 2s ease-in-out;
+  animation-play-state: paused; /* Animacion de la linea inicialmente pausada */
+  animation: moveLine 2s 1; /* Animación de la línea */
+  opacity: 0;
+}
+
+body.bg-light .line {
+  /* Linea dentro del contenedor line-container para el modo oscuro */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  background-color: #2B7B8C;
+  border-radius: 20px;
+  transition: opacity 2s ease-in-out;
+  animation-play-state: paused; /* Animacion de la linea inicialmente pausada */
+  animation: moveLine 2s 1; /* Animación de la línea */
+  opacity: 0;
+}
+
+.spinner-button {
+  /* Boton de descarga */
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 10px 3px;
+  z-index: 1;
+}
+
+.linkedin-button {
+  /* Boton linkedin */
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 10px 3px;
+}
+
+.contact-button {
+  /* Boton contacto */
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 10px 3px;
+}
+
+.icon {
+  /* Iconos de los botones de la seccion de presentacion */
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  transition: opacity 2s ease-in-out;
+  opacity: 1;
+  animation: none;
+}
+
+.image {
+  /* Icono de descarga, se define con una clase diferente porque se va a modificar con JS durante la animacion */
+  position: relative;
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+  width: 28px;
+  height: 28px;
+}
+
+@keyframes down {
+  /* Se desplaza hacia abajo */
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(250%);
+  }
+}
+
+@keyframes up {
+  /* Se desplaza hacia arriba */
+  from {
+    transform: translateY(250%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  /* Se desplaza hacia la derecha */
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(275%);
+  }
+}
+
+@keyframes left {
+  /* Se desplaza hacia la izquierda */
+  from {
+    transform: translateX(275%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  /* Animación de rotación del spinner principal */
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes moveLine {
+  /* Animación de la línea */
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    left: 0;
+  }
+}
+
+/* SECCIÓN EXPERIENCIA */
+
+body.bg-dark .border-left {
+  /* Borde izquierdo al contenedor con marcadores para el modo oscuro */
+  border-left: 2px solid rgb(99, 98, 98);
+}
+
+body.bg-light .border-left {
+  /* Borde izquierdo al contenedor con marcadores para el modo claro */
+  border-left: 2px solid rgb(82, 82, 82);
+}
+
+.progress1 {
+  /* Punto de arriba */
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-40%, 0%);
+}
+
+.progress2 {
+  /* Punto de abajo */
+  font-size: 2.5rem;
+  position: absolute;
+  top: 52%;
+  left: 0%;
+  transform: translate(-40%, 0%);
+}
+
+/*SeCCIÓN DE PROYECTOS*/
+
+body.bg-dark .used-language {
+  background: rgb(27, 27, 27);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-light .used-language {
+  background: #ececec;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+body.bg-dark .custom-span {
+  background: rgb(27, 27, 27);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-light .custom-span {
+  background: #ececec;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+/* SECCIÓN APTUDES - LENGUAJES */
+
+/* Estilos de las tarjetas en los diferentes modos con sus transiciones de rotacion entre adelante y atras */
+
+.letter-wrap {
+  /* Wrap de la carta */
+  -webkit-perspective: 800;
+  perspective: 800;
+}
+
+.letter-wrap:hover .letter {
+  /* Wrap de la carta al hacer hover */
+  transform: rotateY(180deg);
+}
+
+.letter {
+  /* Carta */
+  width: 100%;
+  height: 300px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  border-radius: 10px;
+}
+
+.text-card {
+  /* Estilo del texto de la carta */
+  font-size: medium;
+  cursor: default;
+}
+
+.language {
+  /* Tamaños de los iconos de los lenguajes*/
+  width: 48px;
+  height: 48px;
+}
+
+body.bg-dark .tecnologies {
+  background: rgb(27, 27, 27);
+}
+
+body.bg-light .tecnologies {
+  background: #ececec;
+}
+
+body.bg-dark .forward {
+  /* Parte de adelante de la carta en modo oscuro */
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: rgb(27, 27, 27);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-dark .back {
+  /* Parte de detras de la carta en modo oscuro */
+  transform: rotateY(180deg);
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-light .forward {
+  /* Parte de adelante de la carta en modo claro */
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: #ececec;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+body.bg-light .back {
+  /* Parte de detras de la carta en modo claro */
+  transform: rotateY(180deg);
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  text-align: center;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+body.bg-light .letter-circle {
+  /* Circulo de la carta que contiene el lenguaje en modo claro */
+  background-color: #f5f5f5;
+}
+
+body.bg-dark .letter-circle {
+  /* Circulo de la carta que contiene el lenguaje en modo oscuro */
+  background-color: #000000;
+}
+
+/* SECCIÓN APTUDES - INFORMACIÓN ADICIONAL */
+
+body.bg-dark .info {
+  /* Contenedor de la seccion de informacion adicional en modo oscuro */
+  flex: 1;
+  height: 150px;
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  background: rgb(27, 27, 27);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-light .info {
+  /* Contenedor de la seccion de informacion adicional en modo claro */
+  flex: 1;
+  height: 150px;
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  background: #ececec;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+body.bg-dark .info:hover {
+  /* Contenedor de la seccion de informacion adicional al hacer hover en modo oscuro */
+  flex: 6;
+  transition: flex 0.5s ease, background-color 1s ease;
+  height: 150px;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -webkit-box-shadow: 0px 0px 15px 2px #5b5b5b;
+  -moz-box-shadow: 0px 0px 15px 2px #5b5b5b;
+}
+
+body.bg-light .info:hover {
+  /* Contenedor de la seccion de informacion adicional al hacer hover en modo claro */
+  flex: 6;
+  height: 150px;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -webkit-box-shadow: 0px 0px 15px 3px #b8b8b8;
+  -moz-box-shadow: 0px 0px 15px 3px #b8b8b8;
+}
+
+.content1 {
+  /* Contenido principal */
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+.content2 {
+  /* Contenedido secundario */
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
+}
+
+/* Aparicion del contenido2 después de la transición de hover */
+
+.info:hover .content1 {
+  opacity: 0; /* Desaparece */
+  visibility: hidden; /* Desaparece */
+}
+
+.info:hover .content2 {
+  opacity: 1; /* Aparece */
+  visibility: visible; /* Aparece */
+  transition: opacity 1s ease;
+  transition-delay: 0.5s; /* Esperar antes de mostrar el texto */
+}
+
+/* SECCIÓN SOBRE MÍ*/
+
+body.bg-light .personalized-image {
+  /* Fondo y sombra para los botones con esta clase en modo light */
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #4b4b4b;
+}
+
+body.bg-dark .personalized-image {
+  /* Fondo y sombra para los botones con esta clase en modo dark */
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 20px 0px #5b5b5b;
+}
+
+.footer-link {
+  /* Elementos del footer sin decoracion */
+  text-decoration: none;
+}
+
+body.bg-dark .footer-link:hover {
+  /* Elementos del footer al hacer hoover en modo oscuro */
+  text-decoration: underline;
+  color: #BFBBB8 !important;
+}
+
+body.bg-light .footer-link:hover {
+  /* Elementos del footer al hacer hover en modo claro */
+  text-decoration: underline;
+  color: #BFBBB8 !important;
+}
+
+/* Ajustar visibilidad y otros aspectos en diferentes resoluciones */
+
+@media (max-width: 425px) {
+  .letter {
+    height: 400px;
+  }
+
+  body.bg-dark .info {
+    height: 400px;
+  }
+
+  body.bg-light .info {
+    height: 400px;
+  }
+
+  body.bg-dark .info:hover {
+    height: 400px;
+  }
+
+  body.bg-light .info:hover {
+    height: 400px;
+  }
+}
