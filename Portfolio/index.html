@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Portfolio de Alonso Mangas Alfayate. Fullstack developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Alonso Mangas</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="assets/img/favicon.ico" />
+  </head>
+  <body class="bg-black text-custom-color" id="body">
+    <button
+      width="70"
+      height="70"
+      class="rounded-circle scroll-up d-none d-md-block p-3"
+      onclick="scrollToTop()"
+    >
+      <svg
+        class="path-icons"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path
+          d="M16.939,15.561,12,10.621l-4.939,4.94L4.939,13.439l5.293-5.293a2.5,2.5,0,0,1,3.536,0l5.293,5.293Z"
+        />
+      </svg>
+    </button>
+    <header class="text-center">
+      <div class="container">
+        <nav class="navbar navbar-expand">
+          <div class="container-fluid">
+            <div
+              class="navbar-collapse justify-content-center d-flex flex-wrap"
+            >
+              <ul class="navbar-nav p-1 d-flex flex-wrap">
+                <li class="nav-item experiencie-item">
+                  <a
+                    class="nav-link text-custom-color fw-semibold"
+                    href="#experiencia"
+                    >Experiencia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-custom-color fw-semibold"
+                    href="#proyectos"
+                    >Proyectos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-custom-color fw-semibold"
+                    href="#aptitudes"
+                    >Aptitudes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-custom-color fw-semibold"
+                    href="#sobre-mi"
+                    >Sobre mí</a
+                  >
+                </li>
+                <li class="nav-item dropdown" id="dropdown-menu">
+                  <a
+                    class="nav-link icon-swap"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      class="path-icons"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <path
+                        fill="aqua"
+                        d="M6,18.5c0-3.54,2.43-6.68,5.77-7.47h0c2.41-.57,4.23-2.95,4.23-5.53,0-1.21-.39-2.33-1.06-3.24C13.62,.45,11.23-.18,9.06,.36,3.86,1.68,0,6.4,0,12c0,5.08,3.17,9.43,7.65,11.18-1.03-1.28-1.65-2.91-1.65-4.68ZM10.5,4c.83,0,1.5,.67,1.5,1.5s-.67,1.5-1.5,1.5-1.5-.67-1.5-1.5,.67-1.5,1.5-1.5ZM16.35,.82c1.03,1.28,1.65,2.91,1.65,4.68,0,3.53-2.43,6.68-5.77,7.47h0c-2.41,.57-4.23,2.95-4.23,5.53,0,1.21,.39,2.33,1.06,3.24,1.32,1.8,3.71,2.44,5.88,1.89,5.2-1.31,9.06-6.03,9.06-11.64,0-5.08-3.17-9.43-7.65-11.18Zm-2.85,19.18c-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5,1.5,.67,1.5,1.5-.67,1.5-1.5,1.5Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu p-3" aria-labelledby="themeDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item text-custom-color fw-semibold mb-2"
+                        id="light"
+                        >Light</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-custom-color fw-semibold mb-2"
+                        id="dark"
+                        >Dark</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Comienza el contenido -->
+    <main class="container">
+      <!-- Sección presentación -->
+      <section id="presentacion" class="mb-4">
+        <div class="container col-12 col-lg-8">
+          <div class="col-12 col-lg-12 p-2">
+            <!-- Primera fila: imagen y botón -->
+            <div
+              class="row d-flex justify-content-start align-items-center mb-4"
+            >
+              <div
+                class="d-flex justify-content-start align-items-center gap-4 p-2"
+              >
+                <div
+                  width="70"
+                  height="70"
+                  class="rounded-circle circular-button p-3"
+                >
+                  <svg
+                    class="path-icons"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      fill="aqua"
+                      d="M18,8.5a2.5,2.5,0,0,1-5,0A2.5,2.5,0,0,1,18,8.5Zm-.006,6.866a11.065,11.065,0,0,1-1.163,4.569A7.634,7.634,0,0,1,10,24H9V18.5A3.517,3.517,0,0,0,5.5,15H0V14A7.634,7.634,0,0,1,4.065,7.169,11.065,11.065,0,0,1,8.634,6.006,15.487,15.487,0,0,1,20.972,0h0A3.009,3.009,0,0,1,24,3,15.507,15.507,0,0,1,17.994,15.366ZM2.084,13H4.346A34.361,34.361,0,0,1,6.955,8.237a8.993,8.993,0,0,0-1.993.72A5.519,5.519,0,0,0,2.084,13Zm13.679,4.045A34.361,34.361,0,0,1,11,19.654v2.262a5.519,5.519,0,0,0,4.043-2.878A8.993,8.993,0,0,0,15.763,17.045ZM22,2.972A1,1,0,0,0,21,2c-5.16.147-8.65,2.124-12.018,6.822a29.92,29.92,0,0,0-2.471,4.271,5.5,5.5,0,0,1,4.4,4.4,29.92,29.92,0,0,0,4.271-2.471C19.876,11.65,21.853,8.16,22,2.972ZM6.122,17.879a3.015,3.015,0,0,1,0,4.242c-.907.906-3.622,1.465-4.748,1.664l-1.406.247.247-1.406c.2-1.126.758-3.841,1.664-4.748A3.073,3.073,0,0,1,6.122,17.879ZM5,20a.993.993,0,0,0-.293-.707,1,1,0,0,0-1.414,0A7.318,7.318,0,0,0,2.5,21.5a7.342,7.342,0,0,0,2.208-.794A.993.993,0,0,0,5,20Z"
+                    />
+                  </svg>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/alonsomangas/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div
+                    class="box d-flex justify-content-center align-items-center"
+                  >
+                    <span
+                      class="text-custom-color fw-semibold d-flex justify-content-center align-items-center position-absolute"
+                      >Disponible para trabajar</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Segunda fila: h1 y párrafo -->
+            <div class="row d-flex justify-content-center align-items-center">
+              <h1 class="text-custom-color p-2">Hola, soy Alonso</h1>
+              <p class="text-custom-color p-2 fw-semibold mb-4">
+                Soy un
+                <span class="fw-bold color-2">desarrollador fullstack</span> con
+                sólidos conocimientos en frontend, creando interfaces dinámicas
+                y atractivas, y en backend, diseñando aplicaciones completas y
+                funcionales. Me enfoco en ofrecer soluciones eficientes y bien
+                estructuradas, manteniendo un equilibrio entre diseño y
+                rendimiento.Estoy entusiasmado por aportar valor en mi primer
+                contrato profesional.<br />
+              </p>
+              <nav class="navbar navbar-expand gap-3">
+                <div
+                  class="ms-md-2 col-12 d-flex align-items-center justify-content-start gap-3 p-2"
+                >
+                  <a
+                    href="mailto:16alonsomangas@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                    data-toggle="tooltip"
+                    title="Envíame un correo"
+                  >
+                    <button class="contact-button p-3 me-4">
+                      <div class="spinner2" id="spinner2"></div>
+                      <div>
+                        <svg
+                          class="icon path-language"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M18.5,1H5.5A5.506,5.506,0,0,0,0,6.5v11A5.506,5.506,0,0,0,5.5,23h13A5.506,5.506,0,0,0,24,17.5V6.5A5.506,5.506,0,0,0,18.5,1Zm0,3a2.476,2.476,0,0,1,1.643.631l-6.5,6.5a2.373,2.373,0,0,1-3.278,0l-6.5-6.5A2.476,2.476,0,0,1,5.5,4Zm0,16H5.5A2.5,2.5,0,0,1,3,17.5V8.017l5.239,5.239a5.317,5.317,0,0,0,7.521,0L21,8.017V17.5A2.5,2.5,0,0,1,18.5,20Z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/alonsomangas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: none"
+                    data-toggle="tooltip"
+                    title="Mi perfil de Linkedin"
+                  >
+                    <button class="linkedin-button p-3 ms-4 me-4">
+                      <div class="spinner2" id="spinner2"></div>
+                      <div>
+                        <svg
+                          class="icon path-language"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </a>
+                  <button
+                    class="spinner-button p-3 ms-4"
+                    id="spinner-button"
+                    data-toggle="tooltip"
+                    title="Descarga mi CV"
+                  >
+                    <div class="spinner" id="spinner"></div>
+                    <div class="line-container">
+                      <div class="line"></div>
+                    </div>
+                    <div class="image">
+                      <svg
+                        class="download-icon path-icons"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          id="path-download"
+                          d="M16,12v2c0,1.103-.897,2-2,2h-4c-1.103,0-2-.897-2-2v-2H0v9c0,1.654,1.346,3,3,3H21c1.654,0,3-1.346,3-3V12h-8Zm6,9c0,.552-.448,1-1,1H3c-.552,0-1-.448-1-1v-7H6c0,2.206,1.794,4,4,4h4c2.206,0,4-1.794,4-4h4v7ZM10.586,10.414l-3.293-3.293,1.414-1.414,2.293,2.293V0h2V8l2.293-2.293,1.414,1.414-3.293,3.293c-.39,.39-.902,.585-1.414,.585s-1.024-.195-1.414-.585Z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección experiencia -->
+      <section id="experiencia" class="mb-4">
+        <div class="container col-12 col-lg-8">
+          <div class="col-12 col-lg-12 p-2">
+            <div
+              class="row d-flex justify-content-center align-items-center mb-4"
+            >
+              <h2
+                class="my-4 text-custom-color fw-bold d-flex align-items-center"
+              >
+                <svg
+                  class="head-icon me-3"
+                  width="32"
+                  height="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="white"
+                    d="m20,10h-3V0h3l4,2.5-4,2.5v5Zm-9,8v6H0v-6c0-1.105.895-2,2-2h1v-.5c0-.828.672-1.5,1.5-1.5h2c.828,0,1.5.672,1.5,1.5v.5h1c1.105,0,2,.895,2,2Zm-4,0h-3v2h3v-2Zm12.5-5h-5c-.827,0-1.5-.673-1.5-1.5s.673-1.5,1.5-1.5h.5v-3h-.5c-2.481,0-4.5,2.019-4.5,4.5s2.019,4.5,4.5,4.5h5c.827,0,1.5.673,1.5,1.5s-.673,1.5-1.5,1.5h-6.5v3h6.5c2.481,0,4.5-2.019,4.5-4.5s-2.019-4.5-4.5-4.5Z"
+                  />
+                </svg>
+                Experiencia y trayectoria
+              </h2>
+            </div>
+            <div class="position-relative ms-2 me-2">
+              <div class="border-left">
+                <div class="container ms-4">
+                  <span class="rounded-circle progress1 color-2">•</span>
+                  <div class="row">
+                    <div class="col-12 col-lg-4">
+                      <h3 class="h5 fw-bold mb-2 color-2">
+                        Finalizo Prácticas
+                      </h3>
+                      <h4 class="fw-bold text-custom-color">
+                        Medefine Ingeniería y Marketing
+                      </h4>
+                      <i class="fw-bold color-1">Octubre de 2024</i>
+                    </div>
+                    <div
+                      class="col-12 col-lg-8 mt-2 text-custom-color fw-semibold"
+                    >
+                      Tras finalizar mis prácticas, actualmente estoy
+                      desarrollando proyectos propios y aprendiendo nuevos
+                      lenguages y tecnologías, mientras busco nuevas
+                      oportunidades laborales. Esta etapa me permite mantenerme
+                      actualizado, fomentar un aprendizaje continuo y optimizar
+                      mis habilidades y conocimientos.
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="container ms-4">
+                  <span class="rounded-circle progress2 color-1">•</span>
+                  <div class="row mt-3">
+                    <div class="col-12 col-lg-4">
+                      <h3 class="h5 fw-bold mb-2 color-2">
+                        Comienzo Prácticas
+                      </h3>
+                      <h4 class="fw-bold text-custom-color">
+                        Medefine Ingeniería y Marketing
+                      </h4>
+                      <i class="color-1 fw-bold">Junio de 2024</i>
+                    </div>
+                    <div
+                      class="col-12 col-lg-8 mt-2 text-custom-color fw-semibold"
+                    >
+                      Inicio mis prácticas en un rol enfocado en el desarrollo,
+                      mejora y mantenimiento de plugins personalizados de
+                      WordPress, tanto para el frontend como para el backend. Mi
+                      labor abarca la implementación de soluciones efectivas y
+                      la ejecución de tareas en el entorno de WordPress, lo que
+                      me brinda la oportunidad de adquirir experiencia valiosa
+                      en este campo.
+                    </div>
+                  </div>
+                  <span class="d-none d-lg-block"><br /><br /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección proyectos -->
+      <section id="proyectos" class="mb-4">
+        <div class="container col-12 col-lg-8">
+          <div class="col-12 col-lg-12 p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h2
+                class="my-4 text-custom-color fw-bold d-flex align-items-center"
+              >
+                <svg
+                  class="head-icon me-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    fill="white"
+                    d="M21,1h-2c-1.654,0-3,1.346-3,3H8c0-1.654-1.346-3-3-3H3C1.346,1,0,2.346,0,4v2c0,1.654,1.346,3,3,3h2c.297,0,.583-.044,.854-.125l4.517,7.68c-.237,.429-.372,.921-.372,1.445v2c0,1.654,1.346,3,3,3h2c1.654,0,3-1.346,3-3v-2c0-1.654-1.346-3-3-3h-2c-.388,0-.758,.075-1.099,.209L7.478,7.689c.329-.482,.522-1.063,.522-1.689h8c0,1.654,1.346,3,3,3h2c1.654,0,3-1.346,3-3v-2c0-1.654-1.346-3-3-3Z"
+                  /></svg
+                >Proyectos
+              </h2>
+            </div>
+            <!-- Proyecto 1 -->
+            <div class="ms-2 me-2">
+              <div
+                class="row d-flex justify-content-between align-items-center h-100"
+              >
+                <div class="col-12 col-xl-6 my-4">
+                  <div
+                    class="d-flex flex-column align-items-center transition-all shadow overflow-hidden rounded-xl rounded-sm-md shadow-md-md hover-md-translate-y-1 hover-md-shadow-2xl border-lg border-lg-white border-lg-hover border-lg-hover-gray-700 bg-lg-hover bg-lg-hover-opacity"
+                    style="border-radius: 10px"
+                  >
+                    <img
+                      src="assets/img/captura.webp"
+                      alt="Proyecto1"
+                      class="w-100 h-auto transition-all"
+                      style="
+                        height: 14rem;
+                        object-fit: cover;
+                        object-position: top;
+                        transition-duration: 0.5s;
+                        transform: scale(1.1);
+                      "
+                      loading="lazy"
+                      onmouseover="this.style.transform='scale(1.05)'"
+                      onmouseout="this.style.transform='scale(1.1)'"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div
+                    class="container d-flex flex-column justify-content-center align-items-start"
+                  >
+                    <h3
+                      class="mb-4 text-custom-color fw-semibold d-flex align-items-center"
+                    >
+                      Carsell - Proyecto FullStack
+                    </h3>
+                  </div>
+                  <div
+                    class="container d-flex flex-column justify-content-center align-items-start"
+                  >
+                    <div class="row">
+                      <!-- Fila 1 -->
+                      <div class="col">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span
+                              class="used-language d-flex justify-content-center align-items-center gap-2 rounded-pill py-1 px-2"
+                            >
+                              <img
+                                src="assets/img/nextjs.svg"
+                                alt="Nextjs"
+                                class="size-4"
+                                width="18"
+                                height="18"
+                                style="max-width: 100%; height: auto"
+                              />
+                              <i class="text-custom-color fw-semibold"
+                                >Nextjs</i
+                              >
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span
+                              class="used-language d-flex justify-content-center align-items-center gap-2 rounded-pill py-1 px-4"
+                            >
+                              <img
+                                src="assets/img/tailwindcss.svg"
+                                alt="Tailwindcss"
+                                class="size-4"
+                                width="18"
+                                height="18"
+                                style="max-width: 100%; height: auto"
+                              />
+                              <i class="text-custom-color fw-semibold"
+                                >Tailwindcss</i
+                              >
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <!-- Fila 2 -->
+                      <div
+                        class="text-custom-color col mb-4 text-custom-color fw-semibold"
+                      >
+                        He desarrollado este proyecto con la finalidad de
+                        demostrar mis habilidades. Se trata de una aplicación
+                        que simula un
+                        <span class="color-2 fw-semibold">
+                          compra venta de vehiculos.</span
+                        >
+                        Te invito a explorarla, no te va a defraudar.
+                      </div>
+                    </div>
+
+                    <div class="row mb-4">
+                      <!-- Fila 3 -->
+                      <div class="col">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span
+                              class="d-flex justify-content-center align-items-center gap-2 rounded-pill text-custom-color py-1 px-2"
+                              style="width: auto; background-color: transparent"
+                            >
+                              <a
+                                href="https://github.com/aloonsoo16/carsell"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="d-flex justify-content-center align-items-center gap-2 rounded-pill text-custom-color py-1 px-2"
+                                style="
+                                  width: auto;
+                                  background-color: transparent;
+                                  text-decoration: none;
+                                "
+                              >
+                                <svg
+                                  class="redirect"
+                                  viewBox="0 0 256 250"
+                                  width="24"
+                                  height="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  preserveAspectRatio="xMidYMid"
+                                >
+                                  <path
+                                    d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"
+                                  />
+                                </svg>
+                                <i class="text-custom-color fw-bold"
+                                  >Repositorio</i
+                                >
+                              </a>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span
+                              class="d-flex justify-content-center align-items-center gap-2 rounded-pill text-custom-color py-1 px-2"
+                              style="width: auto; background-color: transparent"
+                            >
+                              <a
+                                href="https://carsell.alonso16.dev/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="d-flex justify-content-center align-items-center gap-2 rounded-pill text-custom-color py-1 px-2"
+                                style="
+                                  width: auto;
+                                  background-color: transparent;
+                                  text-decoration: none;
+                                "
+                              >
+                                <svg
+                                  viewBox="0 0 256 222"
+                                  width="24"
+                                  height="24"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  preserveAspectRatio="xMidYMid"
+                                  class="redirect"
+                                >
+                                  <path d="m128 0 128 221.705H0z" />
+                                </svg>
+                                <i class="text-custom-color fw-bold">Ver</i>
+                              </a>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección aptitudes - languages -->
+      <section id="aptitudes" class="mb-4">
+        <div class="container col-12 col-lg-8">
+          <div class="col-12 col-lg-12 p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h2
+                class="my-4 text-custom-color fw-bold d-flex align-items-center"
+              >
+                <svg
+                  class="head-icon me-3"
+                  id="head-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    fill="white"
+                    d="M23,12c0,.4-.16,.78-.44,1.06l-1.83,1.83c-.47,.47-.73,1.1-.73,1.77v1.84c0,3.03-2.47,5.5-5.5,5.5-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5c1.38,0,2.5-1.12,2.5-2.5v-1.84c0-1.47,.57-2.85,1.61-3.89l.77-.77-.77-.77c-1.04-1.04-1.61-2.42-1.61-3.89v-1.84c0-1.38-1.12-2.5-2.5-2.5-.83,0-1.5-.67-1.5-1.5s.67-1.5,1.5-1.5c3.03,0,5.5,2.47,5.5,5.5v1.84c0,.67,.26,1.3,.73,1.77l1.83,1.83c.28,.28,.44,.66,.44,1.06ZM7,7.34v-1.84c0-1.38,1.12-2.5,2.5-2.5,.83,0,1.5-.67,1.5-1.5s-.67-1.5-1.5-1.5c-3.03,0-5.5,2.47-5.5,5.5v1.84c0,.67-.26,1.3-.73,1.77l-1.83,1.83c-.28,.28-.44,.66-.44,1.06s.16,.78,.44,1.06l1.83,1.83c.47,.47,.73,1.1,.73,1.77v1.84c0,3.03,2.47,5.5,5.5,5.5,.83,0,1.5-.67,1.5-1.5s-.67-1.5-1.5-1.5c-1.38,0-2.5-1.12-2.5-2.5v-1.84c0-1.47-.57-2.85-1.61-3.89l-.77-.77,.77-.77c1.04-1.04,1.61-2.42,1.61-3.89Z"
+                  /></svg
+                >Lenguajes
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="position-relative d-flex justify-content-center align-items-center p-2"
+        >
+          <div class="container col-12 col-xl-12 col-lg-8 p-2">
+            <div class="row">
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter-wrap">
+                    <div class="letter">
+                      <div
+                        class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <div class="rounded-circle letter-circle p-3">
+                          <svg
+                            class="language"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1052 1052"
+                          >
+                            <path fill="transparent" d="M0 0h1052v1052H0z" />
+                            <path
+                              class="path-language"
+                              d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="back d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <p class="fw-bold text-card text-custom-color p-2">
+                          Conocimientos y habilidades de JavaScript para
+                          desarrollar aplicaciones web dinámicas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter-wrap">
+                    <div class="letter">
+                      <div
+                        class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <div class="rounded-circle letter-circle p-3">
+                          <svg
+                            class="language"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 452 520"
+                          >
+                            <path
+                              fill="transparent"
+                              d="M41 460L0 0h451l-41 460-185 52"
+                            />
+                            <path
+                              fill="transparent"
+                              d="M226 472l149-41 35-394H226"
+                            />
+                            <path
+                              class="path-language"
+                              d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"
+                            />
+                            <path
+                              class="path-language"
+                              d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="back d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <p class="fw-bold text-card text-custom-color p-2">
+                          Conocimientos y habilidades de HTML5 para estructurar
+                          páginas responsivas y optimizadas
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter-wrap">
+                    <div class="letter">
+                      <div
+                        class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <div class="rounded-circle letter-circle p-3">
+                          <svg
+                            class="language"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-labelledby="css-logo-title css-logo-description"
+                            viewBox="0 0 1000 1000"
+                          >
+                            <path
+                              fill="transparent"
+                              d="M0 0h840a160 160 0 0 1 160 160v680a160 160 0 0 1-160 160H160A160 160 0 0 1 0 840V0Z"
+                            />
+                            <path
+                              class="path-language"
+                              d="M816.54 919.9c-32.39 0-57.16-9.42-74.5-28.35-17.15-19.03-26.08-46.18-26.88-81.64h69.8c.4 31.36 11.42 47.08 33.08 47.08 11.04 0 18.86-3.5 23.37-10.42 4.41-6.9 6.72-17.93 6.72-33.05 0-12.02-3.01-22.04-8.83-29.95a73.2 73.2 0 0 0-29.48-21.14L783.95 750c-23.06-11.02-39.81-24.04-50.14-39.27-10.03-15.13-15.04-36.36-15.04-63.5 0-30.36 8.83-55 26.37-73.94 18.05-18.93 42.62-28.34 74-28.34 30.3 0 53.76 9.31 70.3 27.84 16.85 18.64 25.67 45.28 26.38 80.14h-67.19c.4-11.4-1.9-22.72-6.72-33.06-3.8-7.6-11.23-11.41-22.26-11.41-19.65 0-29.48 11.71-29.48 35.05 0 11.83 2.4 21.04 7.22 28.05A65.18 65.18 0 0 0 822.76 689l24.77 10.92c25.57 11.72 44.02 26.05 55.35 43.38 11.43 17.23 17.05 40.27 17.05 69.12 0 34.56-9.03 61.1-27.38 79.63-18.25 18.53-43.62 27.85-76 27.85Zm-225.42 0c-32.4 0-57.16-9.42-74.51-28.35-17.15-19.03-26.07-46.18-26.87-81.64h69.79c.4 31.36 11.43 47.08 33.1 47.08 11.02 0 18.84-3.5 23.25-10.42 4.52-6.9 6.72-17.93 6.72-33.05 0-12.02-2.9-22.04-8.72-29.95a73.2 73.2 0 0 0-29.48-21.14L558.53 750c-23.07-11.02-39.81-24.04-50.14-39.27-10.03-15.13-15.04-36.36-15.04-63.5 0-30.36 8.82-55 26.37-73.94 18.05-18.93 42.62-28.34 74-28.34 30.29 0 53.75 9.31 70.2 27.84 17.05 18.64 25.77 45.28 26.47 80.14h-67.18c.4-11.4-1.9-22.72-6.72-33.06-3.81-7.6-11.23-11.41-22.26-11.41-19.66 0-29.49 11.71-29.49 35.05 0 11.83 2.41 21.04 7.22 28.05A65.18 65.18 0 0 0 597.33 689l24.77 10.92c25.57 11.72 44.02 26.05 55.36 43.38 11.33 17.23 17.04 40.27 17.04 69.12 0 34.56-9.12 61.1-27.37 79.63-18.25 18.53-43.62 27.85-76.01 27.85Zm-234.75 0c-31.7 0-56.86-8.62-75.51-25.85-18.65-17.12-27.88-42.87-27.88-76.93V648.83c0-33.85 9.83-59.5 29.48-77.13 19.96-17.43 46.13-26.24 78.52-26.24 31.39 0 56.15 9.01 74.5 26.84 18.56 17.93 27.88 44.58 27.88 80.14v13.32h-73.9v-12.92c0-13.72-3.01-23.84-8.83-30.45a26.46 26.46 0 0 0-21.66-10.32c-12.03 0-20.55 4.1-25.37 12.42a79.04 79.04 0 0 0-6.72 36.66v146.26c0 30.55 10.74 46.08 32.1 46.38 10.02 0 17.54-3.61 22.76-10.82a51.74 51.74 0 0 0 7.72-30.46V801.6h73.9v11.42c0 23.74-4.61 43.57-13.94 59.4a88.8 88.8 0 0 1-38.2 35.66 121.46 121.46 0 0 1-54.85 11.82Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="back d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <p class="fw-bold text-card text-custom-color p-2">
+                          Conocimientos y habilidades de CSS para diseñar,
+                          estilizar y animar componentes visuales
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter-wrap">
+                    <div class="letter">
+                      <div
+                        class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <div class="rounded-circle letter-circle p-3">
+                          <svg
+                            class="language"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -1 100 50"
+                          >
+                            <path
+                              class="path-language"
+                              d="M7.579 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36l-2.014 10.07H0l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053h-1.113l.053-.053M41.093 0h7.314L46.34 10.123h6.572c3.604.071 6.289.813 8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649h-7.42L54.979 21.2c.353-1.767.247-3.021-.318-3.763s-1.784-1.113-3.657-1.113l-5.883-.053-4.346 21.783h-7.314L41.093 0M70.412 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604 1.873 2.367 2.491 5.6 1.855 9.699-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 01-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498a26.11 26.11 0 01-6.254.742h-6.36L70.2 48.124h-7.367l7.579-38.001m6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053H76.56l.053-.053"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="back d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <p class="fw-bold text-card text-custom-color p-2">
+                          Conocimientos y habilidades en PHP para desarrollar
+                          aplicaciones del lado del servidor, gestionando su
+                          lógica, obteniendo datos... todo lo que sea necesario
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter-wrap">
+                    <div class="letter">
+                      <div
+                        class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <div class="rounded-circle letter-circle p-3">
+                          <svg
+                            class="language"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 346"
+                          >
+                            <path
+                              class="path-language"
+                              d="M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17"
+                            />
+                            <path
+                              class="path-language"
+                              d="M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95"
+                            />
+                            <path
+                              class="path-language"
+                              d="M233 295s10 8-10 15c-39 12-163 15-197 0-12-5 11-13 18-14l12-2c-14-9-89 19-38 28 138 22 251-10 215-27M89 190s-63 15-22 21c17 2 51 2 83-1 26-2 52-7 52-7l-16 9c-64 16-187 8-151-9 30-14 54-13 54-13M202 253c64-33 34-66 13-61l-7 2s2-3 6-5c41-14 73 43-14 66l2-2"
+                            />
+                            <path
+                              class="path-language"
+                              d="M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110"
+                            />
+                            <path
+                              class="path-language"
+                              d="M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="back d-flex justify-content-center w-100 align-items-center"
+                      >
+                        <p class="fw-bold text-card text-custom-color p-2">
+                          Conocimientos y habilidades en Java para desarrollar
+                          aplicaciones robustas y escalables, utilizando su
+                          amplia biblioteca y características orientadas a
+                          objetos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 p-3">
+                <div class="letter-wrap">
+                  <div class="letter">
+                    <div
+                      class="forward card1 d-flex justify-content-center w-100 align-items-center"
+                    >
+                      <div class="rounded-circle letter-circle p-3">
+                        <svg
+                          class="language"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="path-language"
+                            d="M7.414,23.964c-3.84-.226-7.414-1.649-7.414-4.178v-.96c1.472,1.047,3.67,1.782,6.275,2.053,.043,.545,.084,.993,.106,1.224,.074,.742,.453,1.401,1.032,1.861Zm1.086-9.964c4.865,0,8.5-1.812,8.5-3.433v-2.167c-1.876,1.596-4.92,2.6-8.5,2.6S1.876,9.996,0,8.4v2.167c0,1.621,3.635,3.433,8.5,3.433Zm-2.353,4.85c-.039-.873-.049-1.699,.013-2.179,.036-.272,.105-.532,.188-.785-2.637-.265-4.862-1.003-6.348-2.06v1.74c0,1.346,2.511,2.821,6.147,3.283Zm2.353-9.85c4.694,0,8.5-2.015,8.5-4.5S13.194,0,8.5,0,0,2.015,0,4.5s3.806,4.5,8.5,4.5Zm14.698,12.404c-.754,0-1.331,0-1.331,0v-5.601c0-.442-.358-.8-.8-.8h0c-.442,0-.8,.358-.8,.8v6.401c0,.442,.358,.8,.8,.8h2.133c.442,0,.8-.358,.8-.8h0c0-.442-.36-.8-.802-.8Zm-11.91-3.055c-.56-.227-1.083-.467-1.364-.595-.098-.045-.428-.173-.433-.615-.002-.131,.103-.441,.515-.577,.427-.138,.831-.046,1.136,.088,.304,.133,.659,.038,.862-.224,.278-.359,.165-.886-.24-1.092-.549-.278-1.312-.479-2.15-.203-.796,.262-1.358,.95-1.469,1.794-.106,.817,.23,1.563,.921,2.047,.003,0,.838,.409,1.752,.779,.214,.086,.904,.409,.816,.958-.065,.391-.491,.794-1.095,.794-.381,0-.752-.106-1.068-.297-.285-.172-.651-.125-.887,.111-.329,.328-.269,.873,.119,1.13,.538,.356,1.174,.551,1.837,.551,1.22,0,2.243-.852,2.434-2.026,.143-.881-.224-2.034-1.683-2.625Zm7.878,3.689c.312,.312,.312,.819,0,1.131-.312,.312-.819,.312-1.131,0l-.433-.433c-.453,.224-.973,.331-1.537,.226-1.209-.224-2.065-1.314-2.065-2.543v-2.917c0-1.365,1.093-2.474,2.452-2.5,1.401-.027,2.548,1.154,2.548,2.556v2.944c0,.398-.101,.769-.267,1.102l.433,.433Zm-1.766-4.535c0-.496-.404-.9-.9-.9s-.9,.404-.9,.9v3c0,.496,.404,.9,.9,.9s.9-.404,.9-.9v-3Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="back d-flex justify-content-center w-100 align-items-center"
+                    >
+                      <p class="fw-bold text-card text-custom-color p-2">
+                        Conocimientos y habilidades en SQL para gestionar y
+                        manipular bases de datos, realizando consultas,
+                        actualizaciones y optimizaciones de datos
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección Aptitudes - Información adicional, para resoluciones mas pequeñas -->
+        <div class="container col-lg-8">
+          <div class="col-lg-12 p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h2
+                class="my-4 text-custom-color fw-bold d-flex align-items-center"
+              >
+                <svg
+                  class="head-icon me-3"
+                  id="head-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    fill="white"
+                    d="M18.5,24H13.034A13.5,13.5,0,0,1,3,19.789a11.467,11.467,0,0,1-2.947-8.9A12.024,12.024,0,0,1,9.908.188a11.641,11.641,0,0,1,9.654,2.569A12.448,12.448,0,0,1,24,12.324V18.5A5.507,5.507,0,0,1,18.5,24ZM12.03,3a9.021,9.021,0,0,0-8.988,8.164,8.509,8.509,0,0,0,2.18,6.605A10.5,10.5,0,0,0,13.034,21H18.5A2.5,2.5,0,0,0,21,18.5V12.324a9.466,9.466,0,0,0-3.366-7.27A8.637,8.637,0,0,0,12.03,3ZM12,6a1.5,1.5,0,0,0,0,3A1.5,1.5,0,0,0,12,6Zm.5,13A1.5,1.5,0,0,1,11,17.5V13h-.5a1.5,1.5,0,0,1,0-3h1A2.5,2.5,0,0,1,14,12.5v5A1.5,1.5,0,0,1,12.5,19Z"
+                  /></svg
+                >Información adicional
+              </h2>
+            </div>
+            <div class="container mt-4 mb-4">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="row my-4 gap-4 col-12">
+                  <div
+                    class="info col-6 d-flex justify-content-center align-items-center p-4 me-2"
+                  >
+                    <span class="content1 text-center color-2 fw-bold"
+                      >Estudios</span
+                    >
+                    <i
+                      class="content2 text-center text-custom-color fw-bold p-3"
+                      ><i
+                        >Grado superior de Desarrollo de aplicaciones
+                        multiplataforma</i
+                      ><br /><i class="color-2"
+                        >IFP Innovación en Formación Profesional</i
+                      ><br /><i>2022-2024</i></i
+                    >
+                  </div>
+                  <div
+                    class="info col-6 d-flex justify-content-center align-items-center p-4 overflow-hidden"
+                  >
+                    <span class="content1 fw-bold color-2 fw-bold"
+                      >Soft Skills</span
+                    >
+                    <i
+                      class="content2 text-center text-custom-color fw-bold p-3"
+                    >
+                      <i
+                        >Comunicación efectiva, adaptabilidad, resolución de
+                        problemas, gestión del tiempo, aprendizaje constante</i
+                      >
+                      <i
+                        >¡Y muchas más habilidades que me ayudan a crecer y
+                        colaborar efectivamente!</i
+                      >
+                      <i class="color-2"
+                        >Si quieres conocerme mejor, contáctame</i
+                      >
+                    </i>
+                  </div>
+                </div>
+                <div class="row my-2 gap-4 col-12">
+                  <div
+                    class="info col-6 d-flex justify-content-center align-items-center p-4 me-2"
+                  >
+                    <span class="content1 text-center color-2 fw-bold"
+                      >Mi visión</span
+                    >
+                    <i
+                      class="content2 text-center text-custom-color fw-bold p-3"
+                      ><i
+                        >Desarrollar software y aplicaciones que hagan la vida
+                        de los usuarios más fácil y productiva, siempre buscando
+                        aprender y mejorar en el camino, adaptándome a lo
+                        necesario</i
+                      ></i
+                    >
+                  </div>
+                  <div
+                    class="info col-6 d-flex justify-content-center align-items-center p-4"
+                  >
+                    <span class="content1 fw-bold color-2 fw-bold"
+                      >Mi misión</span
+                    >
+                    <i
+                      class="content2 text-center text-custom-color fw-bold p-3 overflow-hidden"
+                      ><i
+                        >Convertirme en un desarrollador que inspire confianza,
+                        aportando soluciones digitales que transformen la forma
+                        en que las personas interactúan con la tecnología</i
+                      ></i
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección sobre mi -->
+      <section id="sobre-mi">
+        <div class="container col-12 col-lg-8">
+          <div class="col-12 col-lg-12 p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h2
+                class="my-4 text-custom-color fw-bold d-flex align-items-center"
+              >
+                <svg
+                  class="head-icon me-3"
+                  id="head-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    fill="white"
+                    d="m12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm-3.48,20.299c.107-1.835,1.619-3.299,3.48-3.299s3.373,1.464,3.48,3.299c-1.071.451-2.247.701-3.48.701s-2.409-.25-3.48-.701Zm9.668-1.781c-.84-2.617-3.296-4.518-6.188-4.518s-5.348,1.901-6.188,4.518c-1.727-1.641-2.812-3.953-2.812-6.518C3,7.037,7.038,3,12,3s9,4.037,9,9c0,2.565-1.084,4.877-2.812,6.518Zm-2.689-10.018c0,1.933-1.567,3.5-3.5,3.5s-3.5-1.567-3.5-3.5,1.567-3.5,3.5-3.5,3.5,1.567,3.5,3.5Z"
+                  /></svg
+                >Sobre mí
+              </h2>
+            </div>
+            <div class="container">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div
+                  class="col-md-6 col-lg-8 d-flex flex-column justify-content-center align-items-center order-md-1 order-2 my-4"
+                >
+                  <!-- Sección izquierda - Texto -->
+                  <p class="text-custom-color fw-semibold">
+                    Soy Alonso, tengo 22 años y vivo en Ávila. Soy un recién
+                    graduado en<span class="fw-bold color-2">
+                      Desarrollo de aplicaciones multiplataforma.</span
+                    >
+
+                    Mi enfoque se basa en crear soluciones digitales efectivas
+                    para diferentes plataformas, aplicando mis habilidades y
+                    conocimientos, además de creatividad, a los proyectos que
+                    desarrollo. Me apasiona colaborar en proyectos que no solo
+                    cumplan los objetivos, sino que también generen un impacto
+                    real y relevante. Mi objetivo es seguir perfeccionando mis
+                    habilidades y aportar valor en cada etapa del desarrollo.
+                  </p>
+                </div>
+                <div
+                  class="col-md-6 col-lg-4 p-3 d-flex flex-column justify-content-center align-items-center order-md-2 order-1 my-4"
+                >
+                  <!-- Sección derecha - Imagen -->
+                  <div class="justify-content-center align-items-center">
+                    <img
+                      src="assets/img/imagen-3D.webp"
+                      class="rounded-circle personalized-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 px-3 d-flex flex-wrap justify-content-start align-items-center gap-3"
+          >
+            <!-- Encabezado -->
+            <h4 class="w-100 text-start text-custom-color text-xs">
+              Algunas tecnologías y frameworks que domino
+            </h4>
+
+            <!-- Tecnologías -->
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Next.js
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Node.js
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              React
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Angular
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Tailwindcss
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Boostrap
+            </div>
+
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              PostgreSQL
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              MySQL
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Git
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Figma
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Wordpress
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Wix
+            </div>
+            <div
+              class="tecnologies text-custom-color rounded p-2 text-center fw-semibold"
+            >
+              Shopify
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center py-5">
+      <div class="container">
+        <div class="container col-12 col-lg-12 d-flex flex-wrap">
+          <div class="col-12 col-lg-12 mb-3">
+            <p class="text-secondary fw-bold mb-0">
+              © 2024 Alonso Mangas. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-12 col-lg-12">
+            <a
+              href="https://github.com/aloonsoo16"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-secondary fw-bold footer-link me-2"
+              >Mi perfil de Github</a
+            >
+            <a
+              href="mailto:16alonsomangas@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-secondary fw-bold footer-link ms-2"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/animaciones.js"></script>
+    <script src="assets/js/tema.js"></script>
+    <script src="assets/js/scroll.js"></script>
+  </body>
+</html>
