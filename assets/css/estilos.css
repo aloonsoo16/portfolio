@@ -1,0 +1,571 @@
+/* Estilos del body, header, y boton scroll*/
+
+/* Ocultar el body inicialmente para evitar cambios bruscos */
+body {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Suaviza la aparición */
+}
+
+/* Mostrar el body solo cuando el tema esté aplicado */
+body.theme-loaded {
+  visibility: visible;
+  opacity: 1;
+}
+
+body.bg-dark {
+  background-color: #0c0a09 !important; /* Color del modo dark */
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+body.bg-light {
+  background-color: #e7e5e4 !important; /* Color del modo light */
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  position: sticky; /* Posicion fija */
+  top: 0;
+  z-index: 1000;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* 🔹 Ocultar el botón hasta que el tema esté listo */
+.scroll-up {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s;
+}
+
+/* 🔹 Mostrar el botón cuando el tema esté cargado */
+body.theme-loaded .scroll-up {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 🔹 Estilos en modo claro */
+body.bg-light .scroll-up {
+  z-index: 1000;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px 0px #3f3f46;
+}
+
+/* 🔹 Estilos en modo oscuro */
+body.bg-dark .scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px 0px #78716c;
+}
+
+/* 🔹 Ocultar navbar y los iconos hasta que el tema esté listo */
+.navbar-nav,
+.icon-swap {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.theme-loaded .navbar-nav,
+body.theme-loaded .icon-swap {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar-nav {
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.icon-swap {
+  animation: animate 4s linear infinite;
+}
+
+body.bg-dark .navbar-nav-scrolled {
+  background: rgba(28, 25, 23, 0.8); /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(10px); /* Desenfoque */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 5px 0px #78716c;
+  -webkit-box-shadow: 0px 0px 5px 0px #78716c;
+  -moz-box-shadow: 0px 0px 5px 0px #78716c;
+}
+
+body.bg-light .navbar-nav-scrolled {
+  background: rgba(231, 229, 228, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 5px 0px #3f3f46;
+}
+
+.text-custom-color {
+  transition: none; /* Transicion de cambio de color */
+}
+
+/* Colores generales para color-1 y color-2 */
+.color-1 {
+  color: #78716c !important; /* Color de la clase color-1 */
+}
+
+.color-2 {
+  color: #0891b2 !important; /* Color de la clase color-2 */
+}
+
+/* Colores específicos para el tema claro */
+body.bg-light .color-1 {
+  color: #78716c !important;
+}
+
+body.bg-light .color-2 {
+  color: #0891b2 !important;
+}
+
+body.bg-light .text-custom-color {
+  color: #0c0a09 !important; /* Color para el tema claro */
+}
+
+/* Colores específicos para el tema oscuro */
+body.bg-dark .color-1 {
+  color: #78716c !important;
+}
+
+body.bg-dark .color-2 {
+  color: #0891b2 !important;
+}
+
+body.bg-dark .text-custom-color {
+  color: #d6d3d1 !important; /* Color para el tema oscuro */
+}
+
+/* Colores de los items de la barra de navegación del header según los modos */
+
+body.bg-light .nav-item.active .nav-link {
+  color: #0891b2 !important; /* Color para el enlace activo */
+}
+
+body.bg-light .nav-item .nav-link:active {
+  color: #0891b2 !important; /* Color durante el clic */
+}
+
+body.bg-light .nav-item:active .nav-link {
+  color: #0891b2 !important; /* Color para el enlace cuando se hace clic */
+}
+
+body.bg-light .nav-item .nav-link:hover {
+  color: #0891b2 !important; /* Color durante el hover */
+}
+
+body.bg-dark .nav-item:hover .nav-link {
+  color: #0891b2 !important; /* Color para el enlace cuando se hace hover */
+}
+
+body.bg-dark .nav-item.active .nav-link {
+  color: #0891b2 !important; /* Color para el enlace activo */
+}
+
+body.bg-dark .nav-item .nav-link:active {
+  color: #0891b2 !important; /* Color durante el clic */
+}
+
+body.bg-dark .nav-item:active .nav-link {
+  color: #0891b2 !important; /* Color para el enlace cuando se hace clic */
+}
+
+body.bg-dark .nav-item .nav-link:hover {
+  color: #0891b2 !important; /* Color durante el hover */
+}
+
+body.bg-dark .nav-item:hover .nav-link {
+  color: #0891b2 !important; /* Color para el enlace cuando se hace hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el dropdown al hacer hover */
+}
+
+.dropdown-item {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.178
+  ) !important; /* Fondo con color grisaceo de poca opacidad */
+  border-radius: 20px !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.377
+  ) !important; /* Color grisaceo con mas opacidad al hacer hover */
+  cursor: pointer !important;
+}
+
+body.bg-dark .dropdown-menu {
+  left: auto; /* Elimina la posición automática a la derecha */
+  right: 0; /* Establece la posición en la esquina derecha del botón */
+  margin-right: 0;
+  border: 0px !important;
+  background-color: #0891b2 !important;
+  border-radius: 20px;
+}
+
+body.bg-light .dropdown-menu {
+  left: auto; /* Elimina la posición automática a la derecha */
+  right: 0; /* Establece la posición en la esquina derecha del botón */
+  margin-right: 0;
+  border: 0px !important;
+  background-color: #0891b2 !important;
+  border-radius: 20px;
+}
+
+/* SECCIÓN DE PRESENTACIÓN */
+
+.box {
+  /* Estilos del contenedor en ambos modos */
+  position: relative;
+  width: 250px;
+  height: 45px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.rounded-button {
+  border-radius: 20px;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-image: conic-gradient(transparent, transparent, #0891b2, #78716c);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+body.bg-dark .box span {
+  /* Estilos del span en modo dark */
+  inset: 2px;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: #0c0a09 !important;
+}
+
+body.bg-light .box span {
+  /* Estilos del span en modo light */
+  inset: 2px;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: #e7e5e4 !important;
+}
+
+body.bg-dark .box::after {
+  content: " ";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(transparent, transparent, #78716c);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+body.bg-dark .box::before {
+  content: " ";
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-image: conic-gradient(transparent, transparent, #0891b2);
+  animation: animate 4s linear infinite;
+}
+
+body.bg-light .box::after {
+  content: " ";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-image: conic-gradient(transparent, transparent, #78716c);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+body.bg-light .box::before {
+  content: " ";
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-image: conic-gradient(transparent, transparent, #0891b2);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* SECCIÓN EXPERIENCIA */
+
+body.bg-dark .border-left {
+  /* Borde izquierdo al contenedor con marcadores para el modo oscuro */
+  border-left: 2px solid #78716c;
+}
+
+body.bg-light .border-left {
+  /* Borde izquierdo al contenedor con marcadores para el modo claro */
+  border-left: 2px solid #78716c;
+}
+
+.progress1 {
+  /* Punto de arriba */
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-40%, 0%);
+}
+
+.progress2 {
+  /* Punto de abajo */
+  font-size: 2.5rem;
+  position: absolute;
+  top: 52%;
+  left: 0%;
+  transform: translate(-40%, 0%);
+}
+
+/*SeCCIÓN DE PROYECTOS*/
+
+body.bg-dark .used-language {
+  background: #1c1917;
+  box-shadow: 0px 0px 5px 0px #78716c;
+  -webkit-box-shadow: 0px 0px 5px 0px #78716c;
+  -moz-box-shadow: 0px 0px 5px 0px #78716c;
+}
+
+body.bg-light .used-language {
+  background: #d6d3d1;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 5px 0px #3f3f46;
+}
+
+body.bg-dark .custom-span {
+  background: #1c1917;
+  box-shadow: 0px 0px 15px 2px #3f3f46;
+  -webkit-box-shadow: 0px 0px 15px 2px #3f3f46;
+  -moz-box-shadow: 0px 0px 15px 2px #3f3f46;
+}
+
+body.bg-light .custom-span {
+  background: #d6d3d1;
+  box-shadow: 0px 0px 15px 3px #a8a29e;
+  -webkit-box-shadow: 0px 0px 15px 3px #a8a29e;
+  -moz-box-shadow: 0px 0px 15px 3px #a8a29e;
+}
+
+/* SECCIÓN APTUDES - LENGUAJES */
+
+/* Estilos de las tarjetas en los diferentes modos con sus transiciones de rotacion entre adelante y atras */
+
+.letter-wrap {
+  /* Wrap de la carta */
+  -webkit-perspective: 800;
+  perspective: 800;
+}
+
+.letter-wrap:hover .letter {
+  /* Wrap de la carta al hacer hover */
+  transform: rotateY(180deg);
+}
+
+.letter {
+  /* Carta */
+  width: 100%;
+  height: 300px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  border-radius: 10px;
+}
+
+.text-card {
+  /* Estilo del texto de la carta */
+  font-size: medium;
+  cursor: default;
+}
+
+.language {
+  /* Tamaños de los iconos de los lenguajes*/
+  width: 48px;
+  height: 48px;
+}
+
+body.bg-dark .tecnologies {
+  background: #1c1917;
+}
+
+body.bg-light .tecnologies {
+  background: #d6d3d1;
+}
+
+body.bg-dark .download {
+  border: 2px solid #78716c;
+}
+
+body.bg-light .download {
+  border: 2px solid #78716c;
+}
+
+/* SECCIÓN APTUDES - INFORMACIÓN ADICIONAL */
+
+body.bg-dark .info {
+  /* Contenedor de la seccion de informacion adicional en modo oscuro */
+  flex: 1;
+  height: 150px;
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  background: #1c1917;
+}
+
+body.bg-light .info {
+  /* Contenedor de la seccion de informacion adicional en modo claro */
+  flex: 1;
+  height: 150px;
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  background: #d6d3d1;
+}
+
+body.bg-dark .info:hover {
+  /* Contenedor de la seccion de informacion adicional al hacer hover en modo oscuro */
+  flex: 6;
+  transition: flex 0.5s ease, background-color 1s ease;
+  height: 150px;
+  background: #0c0a09;
+  box-shadow: 0px 0px 5px 0px #78716c;
+  -webkit-box-shadow: 0px 0px 5px 0px #78716c;
+  -moz-box-shadow: 0px 0px 5px 0px #78716c;
+}
+
+body.bg-light .info:hover {
+  /* Contenedor de la seccion de informacion adicional al hacer hover en modo claro */
+  flex: 6;
+  height: 150px;
+  background: #e7e5e4;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 5px 0px #3f3f46;
+}
+
+.content1 {
+  /* Contenido principal */
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+.content2 {
+  /* Contenedido secundario */
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
+}
+
+/* Aparicion del contenido2 después de la transición de hover */
+
+.info:hover .content1 {
+  opacity: 0; /* Desaparece */
+  visibility: hidden; /* Desaparece */
+}
+
+.info:hover .content2 {
+  opacity: 1; /* Aparece */
+  visibility: visible; /* Aparece */
+  transition: opacity 1s ease;
+  transition-delay: 0.5s; /* Esperar antes de mostrar el texto */
+}
+
+/* SECCIÓN SOBRE MÍ*/
+
+body.bg-light .personalized-image {
+  /* Fondo y sombra para los botones con esta clase en modo light */
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(173, 173, 173, 1);
+  box-shadow: 0px 0px 5px 0px #4b4b4b;
+}
+
+body.bg-dark .personalized-image {
+  /* Fondo y sombra para los botones con esta clase en modo dark */
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0px 5px 0px #78716c;
+  -webkit-box-shadow: 0px 0px 5px 0px #78716c;
+  -moz-box-shadow: 0px 0px 5px 0px #78716c;
+}
+
+.footer-link {
+  /* Elementos del footer sin decoracion */
+  text-decoration: none;
+}
+
+body.bg-dark .footer-link:hover {
+  /* Elementos del footer al hacer hoover en modo oscuro */
+  text-decoration: underline;
+  color: #78716c !important;
+}
+
+body.bg-light .footer-link:hover {
+  /* Elementos del footer al hacer hover en modo claro */
+  text-decoration: underline;
+  color: #78716c !important;
+}
+
+/* Ajustar visibilidad y otros aspectos en diferentes resoluciones */
+
+@media (max-width: 425px) {
+  .letter {
+    height: 400px;
+  }
+
+  body.bg-dark .info {
+    height: 400px;
+  }
+
+  body.bg-light .info {
+    height: 400px;
+  }
+
+  body.bg-dark .info:hover {
+    height: 400px;
+  }
+
+  body.bg-light .info:hover {
+    height: 400px;
+  }
+}
